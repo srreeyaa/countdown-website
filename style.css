@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100vw;
+    height:100vh ;
+    background-image:url(bg.jpg.png) ;
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+
+}
+.content{
+    top:20%;
+    position:absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1{
+    font-size: 54px;
+    font-weight: 600;
+
+}
+.content h1 span{
+    color: red;
+}
+.launch-time{
+    display: flex;
+
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom:-14px;    
+}
+.second{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: second 4s linear infinite;
+}
+
+@keyframes second{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
